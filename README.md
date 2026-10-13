@@ -1,5 +1,12 @@
 # Multi-Agent Research System
 
+## Overview
+
+A multi-agent research pipeline in which a supervisor passes work to planner, research, data, critic and writer agents through `POST /agent/run`. The final publish step is refused, so a human stays in the loop before anything goes out. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit, and a pytest suite runs in GitHub Actions.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Laptop lab with no hosted model; publishing is refused and cluster apply stays false until a human approves.
+
 <!-- project-guide:start -->
 ## Project guide
 
